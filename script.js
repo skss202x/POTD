@@ -1,14 +1,14 @@
-// Total number of images you have
-const TOTAL_IMAGES = 3; // update this when you add more
+// Total number of quiz items (pairs)
+const TOTAL_QUIZZES = 3; // update as you add more
 
 const imageElement = document.getElementById("quiz-image");
 const descriptionElement = document.getElementById("description");
 const revealBtn = document.getElementById("reveal-btn");
 const nextBtn = document.getElementById("next-btn");
 
-let currentIndex = null;
+let currentQuiz = null;
 
-// Your descriptions
+// Descriptions shared by each image pair
 const descriptions = {
     1: "In the far north, wildfires are breaking old patterns. Satellite data show that wildland fires once scattered across the Arctic are now surging in numbers—particularly in northern Eurasia—and many are burning more intensely than before.
 
@@ -18,32 +18,33 @@ Although the geographical distribution of high-latitude wildfires varies from ye
 
 Researchers attribute these trends to rising temperatures, which have made northern landscapes more flammable, along with a poleward expansion of lightning—the primary ignition source for these fires. The findings are detailed in a report published in 2025 by the Arctic Monitoring and Assessment Programme (AMAP), a working group of the Arctic Council.
 
-The number of fire detections and their distribution, however, is just one metric of the Arctic’s changing fire regime. According to NASA researchers, fires in this region are also burning larger, hotter, and longer than they did in previous decades.
-
-Fire has always been a part of the boreal and the Arctic landscape,” said Jessica McCarty, Deputy Earth Science Division Chief at NASA’s Ames Research Center and lead author of the report. “But now it's starting to act in more extreme ways that mimic what we've seen in the temperate and the tropical areas.",
-    2: "Description for image 2 goes here.",
-    3: "Description for image 3 goes here."
+The number of fire detections and their distribution, however, is just one metric of the Arctic’s changing fire regime. According to NASA researchers, fires in this region are also burning larger, hotter, and longer than they did in previous decades.",
+    2: "Description for quiz 2 goes here.",
+    3: "Description for quiz 3 goes here."
 };
 
-function loadRandomImage() {
+function loadRandomQuiz() {
     descriptionElement.classList.add("hidden");
 
-    let randomIndex;
+    let randomQuiz;
     do {
-        randomIndex = Math.floor(Math.random() * TOTAL_IMAGES) + 1;
-    } while (randomIndex === currentIndex);
+        randomQuiz = Math.floor(Math.random() * TOTAL_QUIZZES) + 1;
+    } while (randomQuiz === currentQuiz);
 
-    currentIndex = randomIndex;
+    currentQuiz = randomQuiz;
 
-    imageElement.src = `images/pic${currentIndex}.jpg`;
-    descriptionElement.textContent = descriptions[currentIndex];
+    // Randomly choose between picX.jpg or picXa.jpg
+    const imageVariant = Math.random() < 0.5 ? "" : "a";
+    imageElement.src = `images/pic${currentQuiz}${imageVariant}.jpg`;
+
+    descriptionElement.textContent = descriptions[currentQuiz];
 }
 
 revealBtn.addEventListener("click", () => {
     descriptionElement.classList.remove("hidden");
 });
 
-nextBtn.addEventListener("click", loadRandomImage);
+nextBtn.addEventListener("click", loadRandomQuiz);
 
-// Load first image on page load
-loadRandomImage();
+// Load first quiz on page load
+loadRandomQuiz();
