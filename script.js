@@ -1,5 +1,5 @@
 // Total number of quiz items (pairs)
-const TOTAL_QUIZZES = 5; // update as you add more
+const TOTAL_QUIZZES = 19; // update as you add more
 
 const imageElement = document.getElementById("quiz-image");
 const descriptionElement = document.getElementById("description");
