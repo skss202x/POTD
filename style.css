@@ -26,34 +26,48 @@ h1 {
     color: #333;
 }
 
+/* Card container */
 .card {
     background: #ffffff;
     border-radius: 16px;
     padding: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
 }
 
+/* Image area */
 #quiz-image {
     width: 100%;
-    border-radius: 12px;
+    height: 260px;
     object-fit: cover;
+    border-radius: 12px;
     margin-bottom: 15px;
+    background-color: #f3f4f6;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+/* Subtle animation when image changes */
+#quiz-image.fade {
+    opacity: 0;
+    transform: scale(0.98);
 }
 
 #description {
-    margin: 15px 0;
+    margin: 14px 0;
     font-size: 0.95rem;
     color: #444;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
+/* Hidden state for description */
 .hidden {
     display: none;
 }
 
+/* Buttons */
 .buttons {
     display: flex;
     gap: 10px;
+    margin-top: 10px;
 }
 
 button {
@@ -63,20 +77,31 @@ button {
     border-radius: 10px;
     font-size: 0.9rem;
     cursor: pointer;
-    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease,
+        background-color 0.15s ease;
 }
 
 button:hover {
     transform: translateY(-1px);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
+/* Primary action */
 #reveal-btn {
     background-color: #4f46e5;
-    color: white;
+    color: #ffffff;
 }
 
+/* Secondary action */
 #next-btn {
     background-color: #e5e7eb;
-    color: #111;
+    color: #111827;
+}
+
+/* Optional: subtle hint that images come in pairs */
+#quiz-image::after {
+    content: "";
+    display: block;
 }
