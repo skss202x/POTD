@@ -19,8 +19,24 @@ Although the geographical distribution of high-latitude wildfires varies from ye
 Researchers attribute these trends to rising temperatures, which have made northern landscapes more flammable, along with a poleward expansion of lightning—the primary ignition source for these fires. The findings are detailed in a report published in 2025 by the Arctic Monitoring and Assessment Programme (AMAP), a working group of the Arctic Council.
 
 The number of fire detections and their distribution, however, is just one metric of the Arctic’s changing fire regime. According to NASA researchers, fires in this region are also burning larger, hotter, and longer than they did in previous decades.",
-    2: "Description for quiz 2 goes here.",
-    3: "Description for quiz 3 goes here."
+    2: "Summer is usually peak tourism season in Argentina’s Chubut province, a time when hikers and sightseers arrive to explore glacial lakes and cirques, alpine valleys, and towering forests. In January 2026, however, some visitors to the remote Patagonian region instead found themselves fleeing raging wildland fires.
+
+On January 8, 2026, the MODIS (Moderate Resolution Imaging Spectroradiometer) on NASA’s Aqua satellite captured this image of smoke billowing from two large fires burning in and around Los Alerces National Park, a UNESCO World Heritage site. NASA satellites began detecting widespread fire activity in the area on January 6.
+
+The more southerly blaze was spreading east on ridges between Lago Rivadavia, Lago Futalaufquen, and Lago Menéndez; the more northerly fire was burning on steep hillsides around Lago Epuyén. All of the lakes occupy U-shaped glacial troughs, valleys with unusually flat bases and steep sides carved by glacial and periglacial erosion. Satellite-based estimates from the Global Wildfire Information System indicate that fires charred more than 175 square kilometers (67 square miles) across Patagonia between January 5 and 8.
+
+The ridges are blanketed with temperate Patagonian Andean forest, including sections of Valdivian rainforest, with rare stands of alerce (Fitzroya cupressoides). A type of cypress, these huge, slow-growing conifers are the second-longest-lived trees on Earth, with some surviving for more than 3,600 years. According to UNESCO documents, Los Alerces National Park protects 36 percent of Argentina’s alerce forests, including stands with the greatest genetic variability on the eastern slopes of the Andes. The park’s forests also contain exclusive genetic variants and the oldest individuals in the country.
+
+News outlets and the national park reported challenging weather conditions for firefighters on the ground, who faced high temperatures, low humidity, and strong winds in recent days. Standardized Precipitation Index data from the National Integrated Drought Information System show that unusually dry conditions over the past several months have likely primed vegetation to burn. News outlets reported that at least 3,000 tourists had to be evacuated from a lake resort near Lago Epuyén.",
+    3: "Winter weather took hold across the Indo-Gangetic Plain in early January 2026, bringing dense fog and cold temperatures to much of the flat, fertile lands that span from Pakistan and northern India to Bangladesh.
+
+This image shows low-lying clouds over the delta on the morning of January 6, captured by the MODIS (Moderate Resolution Imaging Spectroradiometer) on NASA’s Terra satellite. Dense fog, particularly radiation fog, is common this time of year, forming when ground temperatures are cool, winds are light, and moisture is abundant near the surface. The meteorological departments of both Bangladesh and India called for moderate to very dense fog over the region that day amid an ongoing cold wave.
+
+Other relatively low-level clouds extend from the land areas and over the Bay of Bengal. These long, parallel bands of clouds, known as cloud streets, can form when cold air passes over warmer open water, gaining heat and moisture. Rising thermals ascend until they reach a temperature inversion that acts like a lid, forcing the air to roll into long, parallel rotating cylinders. Clouds develop where the air rises, while clear skies appear where the air sinks.
+
+While it appears scenic from above, foggy conditions can pose hazards and snarl daily life for people on the ground. For instance, dense fog early in the month caused major disruptions at the international airport in Dhaka, according to local news reports. Similar disruptions, along with travel delays on roads and railways, were reported in parts of northern, central, and eastern India.
+
+"
 };
 
 function loadRandomQuiz() {
