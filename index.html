@@ -2,27 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Quiz</title>
+    <title>Picture of the Day</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        <h1>Image Quiz</h1>
+<header>
+    <h1>📅 Picture of the Day</h1>
+    <p>Click a date to explore</p>
+</header>
 
-        <div class="card">
-            <img id="quiz-image" src="" alt="Quiz Image">
-            
-            <p id="description" class="hidden"></p>
+<main class="date-grid">
+    <!-- Example entries -->
+    <a href="dates/01-01.html">January 1</a>
+    <a href="dates/01-02.html">January 2</a>
+    <a href="dates/01-03.html">January 3</a>
 
-            <div class="buttons">
-                <button id="reveal-btn">Reveal Description</button>
-                <button id="next-btn">Next Image</button>
-            </div>
-        </div>
-    </div>
+    <!-- Keep adding until 365 -->
+</main>
 
-    <script src="script.js"></script>
+<footer>
+    <p>© 2026 POTD</p>
+</footer>
+
 </body>
 </html>
