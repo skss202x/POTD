@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Picture of the Day</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="page">
+    <a class="back-link" href="../index.html">← Back to all dates</a>
+
+    <h1>sep 23</h1>
+
+    <!-- IMAGE -->
+    <img src="../images/09-23.jpg" alt="Picture of the Day">
+
+    <!-- DESCRIPTION -->
+    <div class="description">
+
+<p>
+Ragasa Steers Toward China
+    </p>
+    <p>
+  The <strong>2025 Northwest Pacific typhoon season</strong> had been unusually quiet, with real-time estimates of <em>accumulated cyclone energy</em> from Colorado State University showing the basin only half as active as normal as of September 23. Most storms earlier in the year were weak, and only two had reached Category 3 or higher for any sustained period.
+</p>
+
+<p>
+  That calm ended with <strong>Typhoon Ragasa (Nando)</strong>, which formed on <strong>September 18</strong> east of the Philippines. The storm underwent periods of rapid intensification, reaching <strong>Category 5 strength</strong> with sustained winds exceeding 145 knots (270 km/h or 165 mph) late on September 21, making it the strongest typhoon of 2025.
+</p>
+
+<p>
+  Ragasa lashed <strong>northern Luzon and Taiwan</strong> on September 22, producing floods, landslides, and widespread damage to crops and property. Tens of thousands of people were displaced, multiple fatalities were reported, and power outages occurred across affected regions. Authorities in China and Vietnam ordered large-scale evacuations as the storm approached southern Guangdong province and the Gulf of Tonkin.
+</p>
+
+<p>
+  This <strong>MODIS (Moderate Resolution Imaging Spectroradiometer) image</strong> on NASA’s Terra satellite, acquired at 01:40 UTC on September 23, 2025, shows Ragasa over the western Pacific. Forecasters predicted it would maintain a west-northwestward trajectory, weakening only slightly due to a “highly favorable environment characterized by strong radial outflow, warm sea surface temperatures, and low vertical wind shear,” according to the Joint Typhoon Warning Center.
+</p>
+
+<p>
+  The <strong>Western Pacific typhoon season</strong> spans the entire year, peaking in late August to early September. By September 23, 2025, nineteen named storms had formed, but only Ragasa reached super typhoon intensity, illustrating both the season’s late surge and regional variability.
+</p>
+
+  
+    </div>
+</div>
+
+</body>
+</html>
+
