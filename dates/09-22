@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Picture of the Day</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="page">
+    <a class="back-link" href="../index.html">← Back to all dates</a>
+
+    <h1>sep 22</h1>
+
+    <!-- IMAGE -->
+    <img src="../images/09-22.jpg" alt="Picture of the Day">
+
+    <!-- DESCRIPTION -->
+    <div class="description">
+
+<p>
+A Golden Moment for Boreal Forests
+    </p>
+    
+  <p>
+  The <strong>2025 autumnal equinox</strong> arrived on <strong>September 22</strong>, marking the start of astronomical fall in the Northern Hemisphere. At high latitudes, however, the signs of seasonal change were already evident.
+</p>
+
+<p>
+  On September 18, the <strong>OLI (Operational Land Imager) on Landsat 8</strong> captured yellow-tinged hills above the <em>Tanana River</em> near Delta Junction, Alaska. In this subarctic region of Interior Alaska, fall conditions are brief, nestled between short, mild summers and long, frigid winters. 
+</p>
+
+<p>
+  During summer months, plant life thrives under nearly continuous daylight. Hillsides are covered by scrubs and stunted trees such as black spruce, American dwarf birch, and quaking aspen, while low-lying areas support sedges, mosses, and shrubs like lingonberry and bog blueberry. Farmers utilize the short growing season to cultivate cereal grains, forage grasses, legumes, and hardy vegetables.
+</p>
+
+<p>
+  Summer wildfires also leave a lasting imprint on the landscape. Dark brown burned areas visible southeast of Healy Lake are likely from the <em>Twelvemile Lake and Sand Lake fires</em>, which swept through black spruce and brush earlier in the summer. Black spruce, an evergreen species, is particularly fire-prone.
+</p>
+
+<p>
+  The brilliant colors of autumn emerge as air temperatures drop and declining daylight halts chlorophyll production. With the green pigment fading, yellow and red pigments become visible. By the equinox, fall color was well underway in the far north and will gradually progress southward, peaking in mid-November in temperate regions.
+</p>
+
+<p>
+  Astronomically, the September equinox occurs when the Sun crosses the plane of Earth’s equator. Observers at the equator saw the Sun directly overhead at noon on September 22. From that point, the Sun’s apparent path shifts progressively southward until the December solstice, after which it begins moving northward again.
+</p>
+
+    </div>
+</div>
+
+</body>
+</html>
+
