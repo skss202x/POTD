@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Picture of the Day</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="page">
+    <a class="back-link" href="../index.html">← Back to all dates</a>
+
+    <h1>sep 20</h1>
+
+    <!-- IMAGE -->
+    <img src="../images/09-20.jpg" alt="Picture of the Day">
+
+    <!-- DESCRIPTION -->
+    <div class="description">
+
+<p>
+Mozambique’s Rio Lúrio
+    </p>
+    <h2>Mozambique Northern Coast and the Rio Lúrio Delta</h2>
+  
+  <p>An astronaut aboard the International Space Station captured this downward-looking (nadir) photo of part of Mozambique’s northern coast in southeastern Africa. The light-toned <strong>Rio Lúrio</strong> snakes across the top half of the scene. Its delta empties into <strong>Baía do Lúrio</strong>, which opens into the Mozambique Channel. Just north of the delta, the smaller <strong>Rio Megaruma</strong> also enters the channel.</p>
+  
+  <p>In this photo, the Rio Lúrio appears as a light-toned riverbed, indicating dry sand—evidence that the river does not completely fill its channel during periods of low flow. A narrow, darker line winding through the bed marks the active water flow. During high-flow events, however, the river occupies the entire width of its bed. The small sediment plume entering the bay further indicates the current low-flow conditions. Under high-flow conditions, a river of this size would produce a much larger sediment plume.</p>
+  
+  <p>Sand from the Rio Lúrio is transported along the shoreline to the north and south of the delta by nearshore ocean currents, forming beaches along the entire coastline visible in this image. In the center of the view, the sand has accumulated to form a wide sandbar that protrudes four kilometers (2.5 miles) into the sea, connecting a coral island to the mainland. This composite feature—sandbar and island—is known to geologists as a <strong>tombolo</strong>.</p>
+  
+  <p>The <strong>Mozambique Channel</strong>, a wide expanse of warm water between Mozambique and Madagascar, has nurtured the development of numerous coral reefs along the coasts of both countries. Reefs located north and south of the one shown here have been designated as <strong>Key Biodiversity Areas</strong> due to their high coral diversity and the associated variety of other organisms.</p>
+
+  
+    </div>
+</div>
+
+</body>
+</html>
+
