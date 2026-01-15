@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Picture of the Day</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="page">
+    <a class="back-link" href="../index.html">← Back to all dates</a>
+
+    <h1>sep 24 </h1>
+
+    <!-- IMAGE -->
+    <img src="../images/09-24.jpg" alt="Picture of the Day">
+
+    <!-- DESCRIPTION -->
+    <div class="description">
+
+<p>
+A Giant Iceberg’s Final Drift
+    </p>
+  <p>
+  Like every Antarctic iceberg that drifts north into the South Atlantic, <strong>Iceberg A-23A</strong> is surrendering to the ocean as spring arrives in the Southern Hemisphere. Its breakup is notable because it signals the imminent demise of a massive, long-lived berg.
+</p>
+
+<p>
+  This <strong>image captured on September 11, 2025</strong> by the <strong>MODIS (Moderate Resolution Imaging Spectroradiometer) on NASA’s Terra satellite</strong> shows A-23A in disintegration. Its largest remaining fragment still spanned just over 1,500 square kilometers (580 square miles), making it the world’s second-largest freely floating iceberg at that time, though it had already lost about two-thirds of its original area during its northward journey from Antarctica.
+</p>
+
+<p>
+  Nearby, large fragments that calved from A-23A—specifically <strong>Iceberg A-23G</strong> and <strong>Iceberg A-23I</strong>—measured 324 square kilometers (125 square miles) and 344 square kilometers (133 square miles), respectively. The <strong>U.S. National Ice Center</strong> names, tracks, and documents Antarctic icebergs with an area of at least 20 square nautical miles (69 square kilometers) or a length of at least 10 nautical miles (19 kilometers).
+</p>
+
+<p>
+  Icebergs like A-23A were first identified in satellite data by <strong>Jan Lieser</strong> of Australia’s Bureau of Meteorology and <strong>Christopher Shuman</strong> of the University of Maryland (retired), and later confirmed by <strong>Britney Fajardo</strong> of the U.S. National Ice Center using MODIS imagery. Lieser noted that while large icebergs are easily monitored from space, they frequently shed thousands of smaller icebergs that can drift far from their source, sometimes entering shipping lanes.
+</p>
+
+<p>
+  <strong>Landsat satellites</strong> and <strong>synthetic aperture radar (SAR) systems</strong> complement MODIS observations by providing higher-resolution imagery of smaller fragments and the ability to “see” icebergs during polar night and adverse weather, though less frequently.
+</p>
+
+<p>
+  Before its current breakup, A-23A had a long and complex journey. After calving from the <strong>Filchner Ice Shelf in 1986</strong>, it remained grounded on the southern Weddell Sea seafloor for decades. It finally broke free in the early 2020s and drifted north. In March 2024, it became caught in a rotating ocean vortex in the Drake Passage, only to be lodged again on the shallow coastal shelf south of South Georgia Island in May 2025. After freeing itself once more, it drifted to its current location north of the island—likely its final voyage. Like many large icebergs in <em>iceberg alley</em>, it will eventually succumb to the relentless effects of warmer air and water.
+</p>
+  
+  
+    </div>
+</div>
+
+</body>
+</html>
+
