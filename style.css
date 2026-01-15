@@ -1,107 +1,95 @@
+:root {
+    --bg: #f9f9fb;
+    --text: #222;
+    --muted: #666;
+    --card: #ffffff;
+    --accent: #3b82f6;
+}
+
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 body {
-    min-height: 100vh;
-    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
 }
 
-.container {
+/* Header */
+header {
     text-align: center;
-    width: 100%;
-    max-width: 420px;
-    padding: 20px;
+    padding: 2.5rem 1rem;
 }
 
-h1 {
-    margin-bottom: 20px;
-    font-weight: 600;
-    color: #333;
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
 }
 
-/* Card container */
-.card {
-    background: #ffffff;
-    border-radius: 16px;
-    padding: 20px;
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+header p {
+    color: var(--muted);
 }
 
-/* Image area */
-#quiz-image {
-    width: 100%;
-    height: 260px;
-    object-fit: cover;
-    border-radius: 12px;
-    margin-bottom: 15px;
-    background-color: #f3f4f6;
-    transition: opacity 0.25s ease, transform 0.25s ease;
+/* Date grid */
+.date-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 1rem;
+    padding: 1.5rem;
+    max-width: 1000px;
+    margin: auto;
 }
 
-/* Subtle animation when image changes */
-#quiz-image.fade {
-    opacity: 0;
-    transform: scale(0.98);
-}
-
-#description {
-    margin: 14px 0;
-    font-size: 0.95rem;
-    color: #444;
-    line-height: 1.5;
-}
-
-/* Hidden state for description */
-.hidden {
-    display: none;
-}
-
-/* Buttons */
-.buttons {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-button {
-    flex: 1;
-    padding: 10px 14px;
-    border: none;
+.date-grid a {
+    background: var(--card);
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text);
     border-radius: 10px;
-    font-size: 0.9rem;
-    cursor: pointer;
-    transition:
-        transform 0.15s ease,
-        box-shadow 0.15s ease,
-        background-color 0.15s ease;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
-button:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+.date-grid a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    color: var(--accent);
 }
 
-/* Primary action */
-#reveal-btn {
-    background-color: #4f46e5;
-    color: #ffffff;
+/* Date page */
+.page {
+    max-width: 900px;
+    margin: auto;
+    padding: 2rem 1rem;
 }
 
-/* Secondary action */
-#next-btn {
-    background-color: #e5e7eb;
-    color: #111827;
+.page img {
+    width: 100%;
+    border-radius: 12px;
+    margin: 1.5rem 0;
 }
 
-/* Optional: subtle hint that images come in pairs */
-#quiz-image::after {
-    content: "";
-    display: block;
+.page .description {
+    background: var(--card);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    text-decoration: none;
+    color: var(--accent);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: var(--muted);
 }
