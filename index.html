@@ -1,249 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>i've got this</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.5;
-            background-color: #f5f5f5;
-            color: #333;
-        }
+<meta charset="UTF-8">
+<title>Picture of the Day</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.5;
+        background-color: #f5f5f5;
+        color: #333;
+    }
 
-        header {
-            text-align: center;
-            padding: 1rem;
-            background-color: #004080;
-            color: white;
-        }
+    header {
+        text-align: center;
+        padding: 1rem;
+        background-color: #004080;
+        color: white;
+    }
 
-        header h1 {
-            margin-bottom: 0.2rem;
-        }
+    header h1 {
+        margin-bottom: 0.2rem;
+    }
 
-        main {
-            padding: 1rem;
-            max-width: 1200px;
-            margin: auto;
-        }
+    main {
+        padding: 1rem;
+        max-width: 1200px;
+        margin: auto;
+    }
 
-        /* Picture of the Day Section */
-        .potd {
-            text-align: center;
-            margin-bottom: 2rem;
-        }
+    /* Picture of the Day Section */
+    .potd {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
 
-        .potd img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
+    .potd img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
 
-        .potd figcaption {
-            margin-top: 0.5rem;
-            font-size: 0.9rem;
-            color: #555;
-        }
+    .potd figcaption {
+        margin-top: 0.5rem;
+        font-size: 0.9rem;
+        color: #555;
+    }
 
-        /* Date Grid */
+    /* Date Grid */
+    .date-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        justify-items: center;
+    }
+
+    .date-grid a {
+        display: block;
+        text-align: center;
+        padding: 0.8rem;
+        background-color: white;
+        color: #004080;
+        text-decoration: none;
+        border-radius: 6px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        transition: all 0.2s ease-in-out;
+    }
+
+    .date-grid a:hover {
+        background-color: #004080;
+        color: white;
+        transform: translateY(-2px);
+    }
+
+    footer {
+        text-align: center;
+        padding: 1rem;
+        background-color: #004080;
+        color: white;
+        margin-top: 2rem;
+    }
+
+    @media (max-width: 768px) {
         .date-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 1rem;
-            justify-items: center;
+            grid-template-columns: repeat(2, 1fr);
         }
+    }
 
-        .date-grid a {
-            display: block;
-            text-align: center;
-            padding: 0.8rem;
-            background-color: white;
-            color: #004080;
-            text-decoration: none;
-            border-radius: 6px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            transition: all 0.2s ease-in-out;
+    @media (max-width: 480px) {
+        .date-grid {
+            grid-template-columns: 1fr;
         }
-
-        .date-grid a:hover {
-            background-color: #004080;
-            color: white;
-            transform: translateY(-2px);
-        }
-
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background-color: #004080;
-            color: white;
-            margin-top: 2rem;
-        }
-
-        @media (max-width: 600px) {
-            .date-grid {
-                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-            }
-        }
-    </style>
+    }
+</style>
 </head>
 <body>
 
 <header>
-    <h1>📅 </h1>
-    <p>have fun</p>
+    <h1>📅 Picture of the Day</h1>
+    <p>Click a date to explore</p>
 </header>
 
 <main>
-
-      <!-- Picture of the Day -->
+    <!-- Picture of the Day -->
     <figure class="potd" id="potd">
         <img src="" alt="Picture of the Day">
         <figcaption></figcaption>
     </figure>
-    
 
     <!-- Date Grid -->
-    <div class="date-grid">
-     <!-- Example entries -->
-    <a href="dates/12-17.html">dec 17</a>
-    <a href="dates/12-16.html">dec 16</a>
-    <a href="dates/12-15.html">dec 15</a>
-    <a href="dates/12-12.html">dec 12</a>
-    <a href="dates/12-15.html">dec 15</a>
-     <a href="dates/12-12.html">dec 12</a>
-    <a href="dates/12-11.html">dec 11</a>
-    <a href="dates/12-10.html">dec 10</a>
-    <a href="dates/12-09.html">dec 09</a>
-    <a href="dates/12-08.html">dec 08</a>
-      <a href="dates/12-05.html">dec 05</a>
-    <a href="dates/12-04.html">dec 4</a>
-    <a href="dates/12-03.html">dec 3</a>
-    <a href="dates/12-02.html">dec 2</a>
-    <a href="dates/12-01.html">dec 1</a>
-     <a href="dates/11-28.html">nov 28</a>
-    <a href="dates/11-27.html">nov 27</a>
-    <a href="dates/11-26.html">nov 26</a>
-    <a href="dates/11-25.html">nov 25</a>
-    <a href="dates/11-18.html">nov 18</a>
-    <a href="dates/11-17.html">nov 17</a>
-    <a href="dates/11-14.html">nov 14</a>
-     <a href="dates/09-30.html">sep 30</a>
-      <a href="dates/09-29.html">sep 29</a>
-      <a href="dates/09-28.html">sep 28</a>
-      <a href="dates/09-27.html">sep 27</a>
-      <a href="dates/09-26.html">sep 26</a>
-      <a href="dates/09-25.html">sep 25</a>
-      <a href="dates/09-24.html">sep 24</a>
-      <a href="dates/09-23.html">sep 23</a>
-      <a href="dates/09-22.html">sep 22</a>
-      <a href="dates/09-21.html">sep 21</a>
-      <a href="dates/09-20.html">sep 20</a>
-      <a href="dates/09-19.html">sep 19</a>
-      <a href="dates/09-18.html">sep 18</a>
-      <a href="dates/09-17.html">sep 17</a>
-      <a href="dates/09-16.html">sep 16</a>
-      <a href="dates/09-15.html">sep 15</a>
-      <a href="dates/09-14.html">sep 14</a>
-      <a href="dates/09-13.html">sep 13</a>
-      <a href="dates/09-12.html">sep 12</a>
-      <a href="dates/09-11.html">sep 11</a>
-         <a href="dates/09-10.html">sep 10</a>
-      <a href="dates/09-09.html">sep 9</a>
-      <a href="dates/09-08.html">sep 8</a>
-      <a href="dates/09-07.html">sep 7</a>
-      <a href="dates/09-06.html">sep 6</a>
-      <a href="dates/09-05.html">sep 5</a>
-      <a href="dates/09-04.html">sep 4</a>
-      <a href="dates/09-03.html">sep 3</a>
-      <a href="dates/09-02.html">sep 2</a>
-      <a href="dates/09-01.html">sep 1</a>
-    <a href="dates/08-30.html">aug 30</a>
-      <a href="dates/08-29.html">aug 29</a>
-      <a href="dates/08-28.html">aug 28</a>
-      <a href="dates/08-27.html">aug 27</a>
-      <a href="dates/08-26.html">aug 26</a>
-      <a href="dates/08-25.html">aug 25</a>
-      <a href="dates/08-24.html">aug 24</a>
-      <a href="dates/08-23.html">aug 23</a>
-      <a href="dates/08-22.html">aug 22</a>
-      <a href="dates/08-21.html">aug 21</a>
-    <a href="dates/08-20.html">aug 20</a>
-      <a href="dates/08-19.html">aug 19</a>
-      <a href="dates/08-18.html">aug 18</a>
-      <a href="dates/08-17.html">aug 17</a>
-      <a href="dates/08-16.html">aug 16</a>
-      <a href="dates/08-15.html">aug 15</a>
-      <a href="dates/08-14.html">aug 14</a>
-      <a href="dates/08-13.html">aug 13</a>
-      <a href="dates/08-12.html">aug 12</a>
-      <a href="dates/08-11.html">aug 11</a>
-    <a href="dates/08-10.html">aug 10</a>
-      <a href="dates/08-09.html">aug 09</a>
-      <a href="dates/08-08.html">aug 08</a>
-      <a href="dates/08-07.html">aug 07</a>
-      <a href="dates/08-06.html">aug 06</a>
-     
-      <a href="dates/08-04.html">aug 04</a>
-      <a href="dates/08-03.html">aug 03</a>
-      <a href="dates/08-02.html">aug 02</a>
-      <a href="dates/08-01.html">aug 01</a>
-    <a href="dates/07-30.html">jul 30</a>
-      <a href="dates/07-29.html">jul 29</a>
-      <a href="dates/07-28.html">jul 28</a>
-      <a href="dates/07-27.html">jul 27</a>
-      <a href="dates/07-26.html">jul 26</a>
-      <a href="dates/07-25.html">jul 25</a>
-      <a href="dates/07-24.html">jul 24</a>
-   
-      <a href="dates/07-22.html">jul 22</a>
-      <a href="dates/07-21.html">jul 21</a>
-    
-    <!-- Keep adding until 365 -->
-
-
-        <!-- Continue adding all remaining dates in the same pattern -->
+    <div class="date-grid" id="dateGrid">
+        <!-- Dates will be generated here by JS -->
     </div>
-
 </main>
 
-<script>
-    // Randomize Picture of the Day
-    const dateLinks = document.querySelectorAll('#dateGrid a');
-    const randomLink = dateLinks[Math.floor(Math.random() * dateLinks.length)];
-
-    const potdImg = document.querySelector('#potd img');
-    const potdCaption = document.querySelector('#potd figcaption');
-
-    // Assuming image files are named the same as the HTML file but .jpg
-    // For example: 12-17.html -> images/12-17.jpg
-    const href = randomLink.getAttribute('href'); // e.g., "dates/12-17.html"
-    const dateName = href.split('/')[1].replace('.html', ''); // "12-17"
-    const imgPath = `images/${dateName}.jpg`;
-
-    potdImg.src = imgPath;
-    potdImg.alt = `Picture of the Day: ${dateName}`;
-    potdCaption.textContent = `${dateName}.jpg`;
-</script>
-
-
-    
 <footer>
     <p>© 2026 POTD</p>
 </footer>
 
+<script>
+    // Generate 365 dates
+    const months = [
+        {name: 'jan', days: 31},
+        {name: 'feb', days: 28},
+        {name: 'mar', days: 31},
+        {name: 'apr', days: 30},
+        {name: 'may', days: 31},
+        {name: 'jun', days: 30},
+        {name: 'jul', days: 31},
+        {name: 'aug', days: 31},
+        {name: 'sep', days: 30},
+        {name: 'oct', days: 31},
+        {name: 'nov', days: 30},
+        {name: 'dec', days: 31}
+    ];
+
+    const dateGrid = document.getElementById('dateGrid');
+    const allDates = [];
+
+    months.forEach((month, mIndex) => {
+        for (let d = 1; d <= month.days; d++) {
+            const dayStr = d.toString().padStart(2,'0');
+            const monthStr = (mIndex+1).toString().padStart(2,'0');
+            const filename = `${monthStr}-${dayStr}.html`;
+            const link = document.createElement('a');
+            link.href = `dates/${filename}`;
+            link.textContent = `${month.name} ${d}`;
+            dateGrid.appendChild(link);
+
+            allDates.push({filename, month: month.name, day: d});
+        }
+    });
+
+    // Randomize Picture of the Day
+    const randomDate = allDates[Math.floor(Math.random() * allDates.length)];
+    const potdImg = document.querySelector('#potd img');
+    const potdCaption = document.querySelector('#potd figcaption');
+
+    // Assume image name matches HTML file name but with .jpg
+    potdImg.src = `images/${randomDate.filename.replace('.html','.jpg')}`;
+    potdImg.alt = `Picture of the Day: ${randomDate.month} ${randomDate.day}`;
+    potdCaption.textContent = `${randomDate.filename.replace('.html','.jpg')}`;
+</script>
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-    
