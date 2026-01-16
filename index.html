@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Picture of the Day</title>
+    <title>i got this</title>
     <link rel="stylesheet" href="style.css">
     <style>
         body {
@@ -93,17 +93,18 @@
 <body>
 
 <header>
-    <h1>📅 Picture of the Day</h1>
-    <p>Click a date to explore</p>
+    <h1>📅 </h1>
+    <p>have fun</p>
 </header>
 
 <main>
 
-    <!-- Picture of the Day -->
-    <figure class="potd">
-        <img src="images/2026-01-16.jpg" alt="Picture of the Day">
-        <figcaption>2026-01-16.jpg</figcaption>
+      <!-- Picture of the Day -->
+    <figure class="potd" id="potd">
+        <img src="" alt="Picture of the Day">
+        <figcaption></figcaption>
     </figure>
+    
 
     <!-- Date Grid -->
     <div class="date-grid">
@@ -209,6 +210,27 @@
 
 </main>
 
+<script>
+    // Randomize Picture of the Day
+    const dateLinks = document.querySelectorAll('#dateGrid a');
+    const randomLink = dateLinks[Math.floor(Math.random() * dateLinks.length)];
+
+    const potdImg = document.querySelector('#potd img');
+    const potdCaption = document.querySelector('#potd figcaption');
+
+    // Assuming image files are named the same as the HTML file but .jpg
+    // For example: 12-17.html -> images/12-17.jpg
+    const href = randomLink.getAttribute('href'); // e.g., "dates/12-17.html"
+    const dateName = href.split('/')[1].replace('.html', ''); // "12-17"
+    const imgPath = `images/${dateName}.jpg`;
+
+    potdImg.src = imgPath;
+    potdImg.alt = `Picture of the Day: ${dateName}`;
+    potdCaption.textContent = `${dateName}.jpg`;
+</script>
+
+
+    
 <footer>
     <p>© 2026 POTD</p>
 </footer>
