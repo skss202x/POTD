@@ -139,10 +139,14 @@
     const dateGrid = document.getElementById('dateGrid');
     const allDates = [];
 
-    months.forEach((month, mIndex) => {
+
+// Reverse months for Dec → Jan
+    months.slice().reverse().forEach((month, mIndex) => {
         for (let d = 1; d <= month.days; d++) {
             const dayStr = d.toString().padStart(2,'0');
-            const monthStr = (mIndex+1).toString().padStart(2,'0');
+            // Calculate month index from original months array
+            const originalMonthIndex = 11 - mIndex; // since we reversed
+            const monthStr = (originalMonthIndex + 1).toString().padStart(2,'0');
             const filename = `${monthStr}-${dayStr}.html`;
             const link = document.createElement('a');
             link.href = `dates/${filename}`;
@@ -151,6 +155,8 @@
 
             allDates.push({filename, month: month.name, day: d});
         }
+    
+   
     });
 
     // Randomize Picture of the Day
